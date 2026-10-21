@@ -1,0 +1,19 @@
+# Shahi Agro Farm - robots.txt
+# Replace https://YOUR-PUBLISHED-DOMAIN.example with your production domain (e.g., https://shahiagrofarm.com)
+
+User-agent: *
+Allow: /
+Allow: /shop
+Allow: /product/
+Allow: /about
+Allow: /contact
+Allow: /privacy-policy
+Allow: /terms
+Allow: /shipping-returns
+
+# Exclude private checkout and transactional endpoints from search index
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-confirmation
+
+Sitemap: https://YOUR-PUBLISHED-DOMAIN.example/sitemap.xml

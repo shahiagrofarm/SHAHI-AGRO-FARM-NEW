@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Hind Siliguri", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Hind Siliguri", system-ui, -apple-system, sans-serif;
+  --color-emerald-agro: #063D2E;
+  --color-forest-deep: #0B241D;
+  --color-matte-black: #090D0B;
+  --color-ivory: #F6F4EC;
+  --color-champagne-gold: #D8B56D;
+  --color-sage-green: #A9B9A8;
+}
+
+:root {
+  font-family: "Plus Jakarta Sans", "Hind Siliguri", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #090D0B;
+  color: #F6F4EC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: "Playfair Display", "Hind Siliguri", Georgia, serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(11, 36, 29, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(216, 181, 109, 0.18);
+}
+
+.glass-panel-subtle {
+  background: rgba(9, 13, 11, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(169, 185, 168, 0.12);
+}
+
+/* 3D tilt perspective container */
+.perspective-container {
+  perspective: 1000px;
+}
+
+.card-3d {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translateY(-4px) rotateX(2deg) rotateY(-1deg);
+  box-shadow: 0 20px 35px -10px rgba(6, 61, 46, 0.4), 0 0 15px rgba(216, 181, 109, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090D0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B241D;
+  border: 1px solid rgba(216, 181, 109, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #063D2E;
+}

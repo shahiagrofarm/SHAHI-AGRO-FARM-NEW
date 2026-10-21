@@ -1,0 +1,6 @@
+{
+  "name": "Shahi Agro Farm",
+  "description": "Premium agricultural feed and pure dairy products from Bangladesh, including Shahi Grass Silage and artisanal Cow Ghee.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
